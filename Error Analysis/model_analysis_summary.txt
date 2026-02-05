@@ -1,0 +1,1255 @@
+================================================================================
+MODEL / CSV: Claude-Haiku-4.5_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         282  208
+rare_procedures_present           11    3
+numbers_and_labs_present         214  126
+negation_or_reassurance_present   87   24
+sensitive_topics_present          49   40
+polite_phrases_present            83   59
+narrative_style_present          136   80
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance       87       24 0.000002         True   Chi-square    3.088269          FP
+       numbers_and_labs      214      126 0.005989         True   Chi-square    1.480667          FP
+        narrative_style      136       80 0.049033         True   Chi-square    1.386154          FP
+        rare_procedures       11        3 0.111305        False Fisher Exact    2.812298           Z
+       medical_keywords      282      208 0.733211        False   Chi-square    1.055722           Z
+         polite_phrases       83       59 0.759127        False   Chi-square    1.076520           Z
+       sensitive_topics       49       40 0.793147        False   Chi-square    0.919392           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: Claude-Haiku-4.5_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         188  122
+rare_procedures_present            1    2
+numbers_and_labs_present         205  121
+negation_or_reassurance_present    3    3
+sensitive_topics_present          90   60
+polite_phrases_present           110   72
+narrative_style_present          245  156
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       numbers_and_labs      205      121 0.008527         True   Chi-square    1.461986          FP
+        narrative_style      245      156 0.029638         True   Chi-square    1.352541          FP
+       medical_keywords      188      122 0.120731        False   Chi-square    1.258318           Z
+         polite_phrases      110       72 0.324841        False   Chi-square    1.197249           Z
+       sensitive_topics       90       60 0.458981        False   Chi-square    1.162844           Z
+        rare_procedures        1        2 0.580681        False Fisher Exact    0.377143           Z
+negation_or_reassurance        3        3 1.000000        False Fisher Exact    0.755258           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: Claude-Haiku-4.5_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         269  207
+rare_procedures_present            7    4
+numbers_and_labs_present         207  121
+negation_or_reassurance_present   80   23
+sensitive_topics_present          40   40
+polite_phrases_present            79   62
+narrative_style_present          127   82
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance       80       23 0.000006         True   Chi-square    3.018259          FP
+       numbers_and_labs      207      121 0.002277         True   Chi-square    1.553175          FP
+        narrative_style      127       82 0.158153        False   Chi-square    1.270484           Z
+       sensitive_topics       40       40 0.285826        False   Chi-square    0.757962           Z
+        rare_procedures        7        4 0.764056        False Fisher Exact    1.364583           Z
+       medical_keywords      269      207 0.933920        False   Chi-square    1.020282           Z
+         polite_phrases       79       62 1.000000        False   Chi-square    0.988090           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: Claude-Haiku-4.5_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         192  135
+rare_procedures_present            1    2
+numbers_and_labs_present         197  115
+negation_or_reassurance_present    3    3
+sensitive_topics_present          77   58
+polite_phrases_present           103   76
+narrative_style_present          249  165
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       numbers_and_labs      197      115 0.003217         True   Chi-square    1.538466          FP
+        narrative_style      249      165 0.037203         True   Chi-square    1.336294          FP
+       medical_keywords      192      135 0.297682        False   Chi-square    1.168095           Z
+        rare_procedures        1        2 0.584011        False Fisher Exact    0.387255           Z
+         polite_phrases      103       76 0.766841        False   Chi-square    1.066273           Z
+       sensitive_topics       77       58 0.921308        False   Chi-square    1.036986           Z
+negation_or_reassurance        3        3 1.000000        False Fisher Exact    0.775591           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: GPT-4o-mini_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         378  120
+rare_procedures_present           12    1
+numbers_and_labs_present         296   68
+negation_or_reassurance_present  123   13
+sensitive_topics_present          73   31
+polite_phrases_present           123   39
+narrative_style_present          177   42
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance      123       13 0.000007         True   Chi-square    3.708543          FP
+       numbers_and_labs      296       68 0.000195         True   Chi-square    1.837680          FP
+        narrative_style      177       42 0.017901         True   Chi-square    1.591029          FP
+        rare_procedures       12        1 0.202635        False Fisher Exact    4.169492           Z
+       medical_keywords      378      120 0.322615        False   Chi-square    1.169737           Z
+       sensitive_topics       73       31 0.348927        False   Chi-square    0.786159           Z
+         polite_phrases      123       39 0.710546        False   Chi-square    1.098827           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: GPT-4o-mini_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         233  65
+rare_procedures_present            2   1
+numbers_and_labs_present         285  64
+negation_or_reassurance_present    4   3
+sensitive_topics_present         125  40
+polite_phrases_present           158  42
+narrative_style_present          339  71
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with      p_value  Significant         Test  Odds_Ratio Enriched_in
+        narrative_style      339       71 7.132124e-07         True   Chi-square    2.205612          FP
+       numbers_and_labs      285       64 1.543721e-04         True   Chi-square    1.873384          FP
+       medical_keywords      233       65 8.994788e-02        False   Chi-square    1.339630           Z
+         polite_phrases      158       42 1.180223e-01        False   Chi-square    1.372225           Z
+negation_or_reassurance        4        3 3.803508e-01        False Fisher Exact    0.454376           Z
+       sensitive_topics      125       40 7.469916e-01        False   Chi-square    1.087185           Z
+        rare_procedures        2        1 1.000000e+00        False Fisher Exact    0.685237           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: GPT-4o-mini_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         307  191
+rare_procedures_present           11    3
+numbers_and_labs_present         231  110
+negation_or_reassurance_present   96   20
+sensitive_topics_present          55   40
+polite_phrases_present            91   64
+narrative_style_present          156   68
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with      p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance       96       20 2.652666e-07         True   Chi-square    3.570248          FP
+       numbers_and_labs      231      110 7.360460e-04         True   Chi-square    1.624642          FP
+        narrative_style      156       68 1.650551e-03         True   Chi-square    1.688124          FP
+        rare_procedures       11        3 2.699582e-01        False Fisher Exact    2.429408           Z
+       medical_keywords      307      191 4.574826e-01        False   Chi-square    1.112767           Z
+       sensitive_topics       55       40 6.752039e-01        False   Chi-square    0.890476           Z
+         polite_phrases       91       64 7.003211e-01        False   Chi-square    0.918839           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: GPT-4o-mini_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         201  112
+rare_procedures_present            1    3
+numbers_and_labs_present         221  105
+negation_or_reassurance_present    3    3
+sensitive_topics_present          95   56
+polite_phrases_present           117   72
+narrative_style_present          290  127
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with      p_value  Significant         Test  Odds_Ratio Enriched_in
+        narrative_style      290      127 5.692905e-07         True   Chi-square    1.992126          FP
+       numbers_and_labs      221      105 1.034990e-03         True   Chi-square    1.612283          FP
+       medical_keywords      201      112 1.086176e-01        False   Chi-square    1.269035           Z
+        rare_procedures        1        3 3.066430e-01        False Fisher Exact    0.217041           Z
+       sensitive_topics       95       56 5.532341e-01        False   Chi-square    1.133284           Z
+negation_or_reassurance        3        3 6.860245e-01        False Fisher Exact    0.653380           Z
+         polite_phrases      117       72 7.011138e-01        False   Chi-square    1.080994           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Arabic_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         202  137
+rare_procedures_present            7    9
+numbers_and_labs_present         131  103
+negation_or_reassurance_present   19   30
+sensitive_topics_present          28   31
+polite_phrases_present            65   46
+narrative_style_present           82   54
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant       Test  Odds_Ratio Enriched_in
+negation_or_reassurance       19       30 0.003623         True Chi-square    0.402708          FN
+       sensitive_topics       28       31 0.068405        False Chi-square    0.586578           Z
+       numbers_and_labs      131      103 0.208856        False Chi-square    0.799445           Z
+        rare_procedures        7        9 0.301460        False Chi-square    0.522734           Z
+        narrative_style       82       54 0.887728        False Chi-square    1.048501           Z
+         polite_phrases       65       46 0.926462        False Chi-square    0.958689           Z
+       medical_keywords      202      137 0.982512        False Chi-square    1.016864           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Arabic_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         140   89
+rare_procedures_present            1    7
+numbers_and_labs_present         128   97
+negation_or_reassurance_present    2    4
+sensitive_topics_present          46   46
+polite_phrases_present            81   52
+narrative_style_present          178  123
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+        rare_procedures        1        7 0.009011         True Fisher Exact    0.095238          FN
+       sensitive_topics       46       46 0.061337        False   Chi-square    0.639394           Z
+negation_or_reassurance        2        4 0.229724        False Fisher Exact    0.338235           Z
+       numbers_and_labs      128       97 0.383915        False   Chi-square    0.851347           Z
+       medical_keywords      140       89 0.558366        False   Chi-square    1.119787           Z
+         polite_phrases       81       52 0.765938        False   Chi-square    1.082464           Z
+        narrative_style      178      123 0.962120        False   Chi-square    0.979387           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Arabic_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         281  85
+rare_procedures_present            7   9
+numbers_and_labs_present         196  75
+negation_or_reassurance_present   50  22
+sensitive_topics_present          39  32
+polite_phrases_present            85  31
+narrative_style_present          131  32
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant       Test  Odds_Ratio Enriched_in
+       sensitive_topics       39       32 0.000016         True Chi-square    0.330838          FN
+        rare_procedures        7        9 0.005178         True Chi-square    0.232020          FN
+       numbers_and_labs      196       75 0.063894        False Chi-square    0.706512           Z
+        narrative_style      131       32 0.194825        False Chi-square    1.361247           Z
+negation_or_reassurance       50       22 0.196876        False Chi-square    0.677180           Z
+         polite_phrases       85       31 0.477729        False Chi-square    0.825594           Z
+       medical_keywords      281       85 0.811718        False Chi-square    1.059414           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Arabic_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         207  46
+rare_procedures_present            0   5
+numbers_and_labs_present         189  73
+negation_or_reassurance_present    2   2
+sensitive_topics_present          69  32
+polite_phrases_present           111  35
+narrative_style_present          260  58
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+        rare_procedures        0        5 0.000719         True Fisher Exact    0.000000          FN
+        narrative_style      260       58 0.002598         True   Chi-square    1.761084          FP
+       medical_keywords      207       46 0.012599         True   Chi-square    1.648649          FP
+       sensitive_topics       69       32 0.057027        False   Chi-square    0.622611           Z
+       numbers_and_labs      189       73 0.058735        False   Chi-square    0.700738           Z
+negation_or_reassurance        2        2 0.240121        False Fisher Exact    0.308550           Z
+         polite_phrases      111       35 1.000000        False   Chi-square    0.983217           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-English_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         294  103
+rare_procedures_present           10   10
+numbers_and_labs_present         182   92
+negation_or_reassurance_present   48   28
+sensitive_topics_present          47   30
+polite_phrases_present            91   29
+narrative_style_present          132   42
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant       Test  Odds_Ratio Enriched_in
+       numbers_and_labs      182       92 0.000027         True Chi-square    0.481753          FN
+       sensitive_topics       47       30 0.003380         True Chi-square    0.469098          FN
+negation_or_reassurance       48       28 0.014053         True Chi-square    0.520879          FN
+        rare_procedures       10       10 0.016366         True Chi-square    0.315412          FN
+       medical_keywords      294      103 0.439751        False Chi-square    0.864645           Z
+        narrative_style      132       42 0.932395        False Chi-square    1.038008           Z
+         polite_phrases       91       29 0.981185        False Chi-square    1.032820           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-English_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         205  53
+rare_procedures_present            2   6
+numbers_and_labs_present         176  91
+negation_or_reassurance_present    2   3
+sensitive_topics_present          69  40
+polite_phrases_present           114  39
+narrative_style_present          267  77
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       numbers_and_labs      176       91 0.000014         True   Chi-square    0.468715          FN
+       sensitive_topics       69       40 0.002448         True   Chi-square    0.504709          FN
+        rare_procedures        2        6 0.003742         True Fisher Exact    0.106007          FN
+       medical_keywords      205       53 0.070859        False   Chi-square    1.417173           Z
+negation_or_reassurance        2        3 0.099351        False Fisher Exact    0.215548           Z
+        narrative_style      267       77 0.211943        False   Chi-square    1.255685           Z
+         polite_phrases      114       39 0.873608        False   Chi-square    0.946459           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-English_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         194  130
+rare_procedures_present            5    9
+numbers_and_labs_present         136  108
+negation_or_reassurance_present   27   34
+sensitive_topics_present          28   38
+polite_phrases_present            60   45
+narrative_style_present           87   58
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant       Test  Odds_Ratio Enriched_in
+       sensitive_topics       28       38 0.003697         True Chi-square    0.455108          FN
+negation_or_reassurance       27       34 0.013918         True Chi-square    0.498361          FN
+        rare_procedures        5        9 0.114424        False Chi-square    0.365779           Z
+       numbers_and_labs      136      108 0.119582        False Chi-square    0.759898           Z
+         polite_phrases       60       45 0.626528        False Chi-square    0.878788           Z
+       medical_keywords      194      130 1.000000        False Chi-square    1.012025           Z
+        narrative_style       87       58 1.000000        False Chi-square    1.014235           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-English_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         138   82
+rare_procedures_present            0    6
+numbers_and_labs_present         130  103
+negation_or_reassurance_present    2    4
+sensitive_topics_present          53   45
+polite_phrases_present            80   52
+narrative_style_present          175  113
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+        rare_procedures        0        6 0.004106         True Fisher Exact    0.000000          FN
+       numbers_and_labs      130      103 0.140750        False   Chi-square    0.768948           Z
+negation_or_reassurance        2        4 0.226396        False Fisher Exact    0.333333           Z
+       sensitive_topics       53       45 0.257090        False   Chi-square    0.759012           Z
+       medical_keywords      138       82 0.297873        False   Chi-square    1.214634           Z
+        narrative_style      175      113 0.686877        False   Chi-square    1.083268           Z
+         polite_phrases       80       52 0.897584        False   Chi-square    1.047009           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Multilingual_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         108  82
+rare_procedures_present            3   7
+numbers_and_labs_present          73  65
+negation_or_reassurance_present    4  17
+sensitive_topics_present          17  26
+polite_phrases_present            38  25
+narrative_style_present           48  25
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance        4       17 0.000166         True Fisher Exact    0.148104          FN
+       sensitive_topics       17       26 0.010022         True   Chi-square    0.408654          FN
+       numbers_and_labs       73       65 0.088585        False   Chi-square    0.666827           Z
+        rare_procedures        3        7 0.098961        False Fisher Exact    0.290043           Z
+        narrative_style       48       25 0.217833        False   Chi-square    1.455686           Z
+       medical_keywords      108       82 0.483890        False   Chi-square    0.835563           Z
+         polite_phrases       38       25 0.893221        False   Chi-square    1.081718           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Multilingual_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                 FP  FN
+medical_keywords_present         86  43
+rare_procedures_present           1   4
+numbers_and_labs_present         71  63
+negation_or_reassurance_present   0   2
+sensitive_topics_present         24  31
+polite_phrases_present           52  28
+narrative_style_present          96  64
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       sensitive_topics       24       31 0.019297         True   Chi-square    0.481137          FN
+       medical_keywords       86       43 0.028172         True   Chi-square    1.704348          FP
+       numbers_and_labs       71       63 0.102578        False   Chi-square    0.676190           Z
+        rare_procedures        1        4 0.163858        False Fisher Exact    0.171250           Z
+negation_or_reassurance        0        2 0.169265        False Fisher Exact    0.000000           Z
+         polite_phrases       52       28 0.244751        False   Chi-square    1.408437           Z
+        narrative_style       96       64 0.747064        False   Chi-square    1.100000           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Multilingual_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         107  73
+rare_procedures_present            3   6
+numbers_and_labs_present          68  61
+negation_or_reassurance_present    8  18
+sensitive_topics_present          19  20
+polite_phrases_present            34  21
+narrative_style_present           39  29
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance        8       18 0.005763         True   Chi-square    0.288416          FN
+       numbers_and_labs       68       61 0.124582        False   Chi-square    0.688012           Z
+        rare_procedures        3        6 0.171652        False Fisher Exact    0.347150           Z
+       sensitive_topics       19       20 0.261536        False   Chi-square    0.644068           Z
+         polite_phrases       34       21 0.671791        False   Chi-square    1.189300           Z
+       medical_keywords      107       73 0.739270        False   Chi-square    1.103432           Z
+        narrative_style       39       29 0.963387        False   Chi-square    0.950802           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: XLM-R-Multilingual_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present          87  57
+rare_procedures_present            1   5
+numbers_and_labs_present          65  57
+negation_or_reassurance_present    1   3
+sensitive_topics_present          22  23
+polite_phrases_present            42  23
+narrative_style_present          100  67
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+        rare_procedures        1        5 0.085826        False Fisher Exact    0.138462           Z
+       numbers_and_labs       65       57 0.192254        False   Chi-square    0.722512           Z
+       sensitive_topics       22       23 0.223066        False   Chi-square    0.643178           Z
+negation_or_reassurance        1        3 0.311871        False Fisher Exact    0.234188           Z
+         polite_phrases       42       23 0.315458        False   Chi-square    1.387352           Z
+       medical_keywords       87       57 0.576150        False   Chi-square    1.162240           Z
+        narrative_style      100       67 0.644743        False   Chi-square    1.134950           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_concerning_normal_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         535  23
+rare_procedures_present           14   1
+numbers_and_labs_present         461  13
+negation_or_reassurance_present  192   2
+sensitive_topics_present         112   1
+polite_phrases_present           179   4
+narrative_style_present          241  12
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance      192        2 0.022115         True Fisher Exact    4.470314          FP
+       sensitive_topics      112        1 0.115919        False Fisher Exact    4.890309           Z
+       numbers_and_labs      461       13 0.134442        False   Chi-square    1.743025           Z
+         polite_phrases      179        4 0.289951        False Fisher Exact    1.950115           Z
+        rare_procedures       14        1 0.446579        False Fisher Exact    0.553520           Z
+        narrative_style      241       12 0.507081        False   Chi-square    0.743827           Z
+       medical_keywords      535       23 0.739081        False   Chi-square    0.856505           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_concerning_normal_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         278  15
+rare_procedures_present            4   0
+numbers_and_labs_present         445  12
+negation_or_reassurance_present    6   0
+sensitive_topics_present         197   1
+polite_phrases_present           229   8
+narrative_style_present          433  19
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       sensitive_topics      197        1 0.003509         True Fisher Exact    9.457845          FP
+       numbers_and_labs      445       12 0.106417        False   Chi-square    1.835809           Z
+       medical_keywords      278       15 0.249580        False   Chi-square    0.647348           Z
+        narrative_style      433       19 0.717743        False   Chi-square    0.848152           Z
+         polite_phrases      229        8 0.816693        False   Chi-square    1.184002           Z
+        rare_procedures        4        0 1.000000        False Fisher Exact         inf           Z
+negation_or_reassurance        6        0 1.000000        False Fisher Exact         inf           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_concerning_normal_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         343  205
+rare_procedures_present            5    7
+numbers_and_labs_present         283  138
+negation_or_reassurance_present  111   27
+sensitive_topics_present          76   19
+polite_phrases_present            96   82
+narrative_style_present          162   72
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant       Test  Odds_Ratio Enriched_in
+negation_or_reassurance      111       27 0.000132         True Chi-square    2.367003          FP
+         polite_phrases       96       82 0.000439         True Chi-square    0.551724          FN
+       sensitive_topics       76       19 0.002947         True Chi-square    2.225755          FP
+       medical_keywords      343      205 0.037079         True Chi-square    0.758011          FN
+        rare_procedures        5        7 0.146199        False Chi-square    0.369388           Z
+        narrative_style      162       72 0.219027        False Chi-square    1.230663           Z
+       numbers_and_labs      283      138 0.418631        False Chi-square    1.122553           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_concerning_normal_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         177  164
+rare_procedures_present            2    4
+numbers_and_labs_present         275  132
+negation_or_reassurance_present    2    0
+sensitive_topics_present         123   43
+polite_phrases_present           133  103
+narrative_style_present          278  161
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with      p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords      177      164 1.591251e-10         True   Chi-square    0.419034          FN
+         polite_phrases      133      103 8.897491e-04         True   Chi-square    0.600482          FN
+       sensitive_topics      123       43 1.614861e-02         True   Chi-square    1.602254          FP
+        rare_procedures        2        4 1.893551e-01        False Fisher Exact    0.259602           Z
+        narrative_style      278      161 2.062546e-01        False   Chi-square    0.841113           Z
+       numbers_and_labs      275      132 3.312911e-01        False   Chi-square    1.148256           Z
+negation_or_reassurance        2        0 5.485169e-01        False Fisher Exact         inf           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_distressed_stable_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         535  16
+rare_procedures_present           15   1
+numbers_and_labs_present         473  11
+negation_or_reassurance_present  194   1
+sensitive_topics_present         111   1
+polite_phrases_present           185   4
+narrative_style_present          243   9
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance      194        1 0.008720         True Fisher Exact    8.522543          FP
+       numbers_and_labs      473       11 0.061614        False   Chi-square    2.054608           Z
+       sensitive_topics      111        1 0.171242        False Fisher Exact    4.449367           Z
+         polite_phrases      185        4 0.287133        False Fisher Exact    1.852117           Z
+       medical_keywords      535       16 0.316598        False   Chi-square    1.467677           Z
+        rare_procedures       15        1 0.441616        False Fisher Exact    0.545977           Z
+        narrative_style      243        9 1.000000        False   Chi-square    0.992647           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_distressed_stable_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         279  13
+rare_procedures_present            4   1
+numbers_and_labs_present         457  11
+negation_or_reassurance_present    6   1
+sensitive_topics_present         199   1
+polite_phrases_present           233   8
+narrative_style_present          433  20
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       sensitive_topics      199        1 0.005370         True Fisher Exact    8.793023          FP
+       numbers_and_labs      457       11 0.091204        False   Chi-square    1.932347           Z
+        rare_procedures        4        1 0.165700        False Fisher Exact    0.144076           Z
+negation_or_reassurance        6        1 0.224203        False Fisher Exact    0.216524           Z
+        narrative_style      433       20 0.258751        False   Chi-square    0.657109           Z
+       medical_keywords      279       13 0.432188        False   Chi-square    0.715385           Z
+         polite_phrases      233        8 0.981109        False   Chi-square    1.093069           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_distressed_stable_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         547   1
+rare_procedures_present           15   0
+numbers_and_labs_present         478   0
+negation_or_reassurance_present  196   0
+sensitive_topics_present         112   0
+polite_phrases_present           186   0
+narrative_style_present          250   1
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+        narrative_style      250        1 0.408993        False Fisher Exact    0.299760           Z
+       numbers_and_labs      478        0 0.506710        False Fisher Exact         inf           Z
+       medical_keywords      547        1 1.000000        False Fisher Exact    1.018622           Z
+        rare_procedures       15        0 1.000000        False Fisher Exact         inf           Z
+negation_or_reassurance      196        0 1.000000        False Fisher Exact         inf           Z
+       sensitive_topics      112        0 1.000000        False Fisher Exact         inf           Z
+         polite_phrases      186        0 1.000000        False Fisher Exact         inf           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_distressed_stable_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         285   1
+rare_procedures_present            4   0
+numbers_and_labs_present         462   0
+negation_or_reassurance_present    6   0
+sensitive_topics_present         199   0
+polite_phrases_present           238   0
+narrative_style_present          444   1
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords      285        1 0.457528        False Fisher Exact    0.356696           Z
+       numbers_and_labs      462        0 0.510675        False Fisher Exact         inf           Z
+        rare_procedures        4        0 1.000000        False Fisher Exact         inf           Z
+negation_or_reassurance        6        0 1.000000        False Fisher Exact         inf           Z
+       sensitive_topics      199        0 1.000000        False Fisher Exact         inf           Z
+         polite_phrases      238        0 1.000000        False Fisher Exact         inf           Z
+        narrative_style      444        1 1.000000        False Fisher Exact    0.693750           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_trigger_non-trigger_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         359  190
+rare_procedures_present           11    3
+numbers_and_labs_present         275  114
+negation_or_reassurance_present  114   23
+sensitive_topics_present          69   30
+polite_phrases_present           127   36
+narrative_style_present          156   68
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance      114       23 0.000002         True   Chi-square    3.033885          FP
+         polite_phrases      127       36 0.000196         True   Chi-square    2.126948          FP
+       numbers_and_labs      275      114 0.002697         True   Chi-square    1.521963          FP
+        narrative_style      156       68 0.103264        False   Chi-square    1.319118           Z
+       sensitive_topics       69       30 0.337563        False   Chi-square    1.276936           Z
+        rare_procedures       11        3 0.400622        False Fisher Exact    2.007018           Z
+       medical_keywords      359      190 0.728174        False   Chi-square    1.055006           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_trigger_non-trigger_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         192  139
+rare_procedures_present            3    1
+numbers_and_labs_present         265  112
+negation_or_reassurance_present    6    0
+sensitive_topics_present         127   40
+polite_phrases_present           163   46
+narrative_style_present          306  133
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+         polite_phrases      163       46 0.000012         True   Chi-square    2.217264          FP
+       sensitive_topics      127       40 0.001242         True   Chi-square    1.891120          FP
+       medical_keywords      192      139 0.002147         True   Chi-square    0.650693          FN
+        narrative_style      306      133 0.005885         True   Chi-square    1.455070          FP
+       numbers_and_labs      265      112 0.006525         True   Chi-square    1.468001          FP
+negation_or_reassurance        6        0 0.096102        False Fisher Exact         inf           Z
+        rare_procedures        3        1 1.000000        False Fisher Exact    1.631501           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_trigger_non-trigger_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                 FP   FN
+medical_keywords_present          2  588
+rare_procedures_present           0   16
+numbers_and_labs_present          7  349
+negation_or_reassurance_present   2   58
+sensitive_topics_present          1   67
+polite_phrases_present            1  162
+narrative_style_present           0  251
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords        2      588 0.008781         True Fisher Exact    0.153061          FN
+        narrative_style        0      251 0.047809         True Fisher Exact    0.000000          FN
+negation_or_reassurance        2       58 0.156137        False Fisher Exact    3.213166           Z
+       numbers_and_labs        7      349 0.174838        False   Chi-square    2.453677           Z
+       sensitive_topics        1       67 0.567175        False Fisher Exact    1.263682           Z
+         polite_phrases        1      162 0.704685        False Fisher Exact    0.473765           Z
+        rare_procedures        0       16 1.000000        False Fisher Exact    0.000000           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_trigger_non-trigger_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                 FP   FN
+medical_keywords_present          0  497
+rare_procedures_present           0   12
+numbers_and_labs_present          7  335
+negation_or_reassurance_present   0    5
+sensitive_topics_present          0   97
+polite_phrases_present            1  192
+narrative_style_present           4  525
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords        0      497 0.000397         True Fisher Exact    0.000000          FN
+       numbers_and_labs        7      335 0.141183        False   Chi-square    2.604975           Z
+        narrative_style        4      525 0.267769        False Fisher Exact    0.472381           Z
+         polite_phrases        1      192 0.484881        False Fisher Exact    0.386719           Z
+       sensitive_topics        0       97 0.619647        False Fisher Exact    0.000000           Z
+        rare_procedures        0       12 1.000000        False Fisher Exact    0.000000           Z
+negation_or_reassurance        0        5 1.000000        False Fisher Exact    0.000000           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_urgent_non-urgent_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         148  432
+rare_procedures_present            5   11
+numbers_and_labs_present          90  277
+negation_or_reassurance_present   41   43
+sensitive_topics_present          31   53
+polite_phrases_present            31  123
+narrative_style_present           50  190
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with      p_value  Significant       Test  Odds_Ratio Enriched_in
+negation_or_reassurance       41       43 1.236077e-07         True Chi-square    3.313480          FP
+       sensitive_topics       31       53 8.226687e-03         True Chi-square    1.919301          FP
+        narrative_style       50      190 1.670721e-01        False Chi-square    0.770854           Z
+         polite_phrases       31      123 2.160947e-01        False Chi-square    0.750642           Z
+       medical_keywords      148      432 4.019065e-01        False Chi-square    1.138970           Z
+        rare_procedures        5       11 7.279843e-01        False Chi-square    1.414927           Z
+       numbers_and_labs       90      277 1.000000e+00        False Chi-square    1.008731           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_urgent_non-urgent_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present          73  357
+rare_procedures_present            2    7
+numbers_and_labs_present          89  267
+negation_or_reassurance_present    3    4
+sensitive_topics_present          48   76
+polite_phrases_present            51  141
+narrative_style_present          104  380
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords       73      357 0.000005         True   Chi-square    0.491189          FN
+       sensitive_topics       48       76 0.000129         True   Chi-square    2.169208          FP
+        narrative_style      104      380 0.050730        False   Chi-square    0.746569           Z
+negation_or_reassurance        3        4 0.371100        False Fisher Exact    2.336873           Z
+         polite_phrases       51      141 0.502330        False   Chi-square    1.148533           Z
+       numbers_and_labs       89      267 0.812272        False   Chi-square    1.048170           Z
+        rare_procedures        2        7 1.000000        False Fisher Exact    0.883516           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_urgent_non-urgent_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                 FP   FN
+medical_keywords_present         27  543
+rare_procedures_present           0   16
+numbers_and_labs_present         12  335
+negation_or_reassurance_present   9   57
+sensitive_topics_present          2   62
+polite_phrases_present            1  160
+narrative_style_present           6  239
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance        9       57 0.001873         True   Chi-square    3.515038          FP
+         polite_phrases        1      160 0.002537         True Fisher Exact    0.104000          FN
+        narrative_style        6      239 0.063458        False   Chi-square    0.420084           Z
+       numbers_and_labs       12      335 0.173402        False   Chi-square    0.603444           Z
+       sensitive_topics        2       62 0.764192        False Fisher Exact    0.612245           Z
+       medical_keywords       27      543 0.914667        False   Chi-square    0.930249           Z
+        rare_procedures        0       16 1.000000        False Fisher Exact    0.000000           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_base_urgent_non-urgent_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                 FP   FN
+medical_keywords_present         17  447
+rare_procedures_present           0   12
+numbers_and_labs_present         12  322
+negation_or_reassurance_present   0    5
+sensitive_topics_present          2   92
+polite_phrases_present            3  187
+narrative_style_present          16  493
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+         polite_phrases        3      187 0.015219         True Fisher Exact    0.269051          FN
+        narrative_style       16      493 0.015968         True   Chi-square    0.462706          FN
+       medical_keywords       17      447 0.133857        False   Chi-square    0.609620           Z
+       numbers_and_labs       12      322 0.238322        False   Chi-square    0.640229           Z
+       sensitive_topics        2       92 0.310959        False Fisher Exact    0.399290           Z
+        rare_procedures        0       12 1.000000        False Fisher Exact    0.000000           Z
+negation_or_reassurance        0        5 1.000000        False Fisher Exact    0.000000           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_concerning_normal_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         528  23
+rare_procedures_present           15   3
+numbers_and_labs_present         450  17
+negation_or_reassurance_present  169  13
+sensitive_topics_present         111   2
+polite_phrases_present           182   1
+narrative_style_present          236   9
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+         polite_phrases      182        1 0.008705         True Fisher Exact    8.350588          FP
+negation_or_reassurance      169       13 0.014267         True   Chi-square    0.406721          FN
+        rare_procedures       15        3 0.026621         True Fisher Exact    0.181908          FN
+       sensitive_topics      111        2 0.425876        False Fisher Exact    2.289902           Z
+       medical_keywords      528       23 0.531578        False   Chi-square    0.774327           Z
+       numbers_and_labs      450       17 1.000000        False   Chi-square    1.046089           Z
+        narrative_style      236        9 1.000000        False   Chi-square    1.021217           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_concerning_normal_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         275  19
+rare_procedures_present            3   2
+numbers_and_labs_present         435  16
+negation_or_reassurance_present    4   1
+sensitive_topics_present         195   1
+polite_phrases_present           233   2
+narrative_style_present          424  21
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       sensitive_topics      195        1 0.005481         True Fisher Exact    9.086022          FP
+         polite_phrases      233        2 0.005622         True Fisher Exact    5.540676          FP
+       medical_keywords      275       19 0.006531         True   Chi-square    0.401516          FN
+        rare_procedures        3        2 0.012647         True Fisher Exact    0.055394          FN
+negation_or_reassurance        4        1 0.173454        False Fisher Exact    0.151751           Z
+        narrative_style      424       21 0.202658        False   Chi-square    0.630952           Z
+       numbers_and_labs      435       16 0.914642        False   Chi-square    1.092965           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_concerning_normal_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         532  14
+rare_procedures_present           15   1
+numbers_and_labs_present         460   9
+negation_or_reassurance_present  180   6
+sensitive_topics_present         112   1
+polite_phrases_present           181   2
+narrative_style_present          240   5
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+         polite_phrases      181        2 0.290774        False Fisher Exact    2.505190           Z
+        rare_procedures       15        1 0.326254        False Fisher Exact    0.363020           Z
+       numbers_and_labs      460        9 0.458048        False   Chi-square    1.477702           Z
+       sensitive_topics      112        1 0.510850        False Fisher Exact    2.991453           Z
+negation_or_reassurance      180        6 0.600840        False   Chi-square    0.691244           Z
+        narrative_style      240        5 0.838381        False   Chi-square    1.247525           Z
+       medical_keywords      532       14 0.910794        False   Chi-square    0.883721           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_concerning_normal_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         279  13
+rare_procedures_present            3   3
+numbers_and_labs_present         444   8
+negation_or_reassurance_present    5   1
+sensitive_topics_present         195   0
+polite_phrases_present           233   2
+narrative_style_present          428  11
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+        rare_procedures        3        3 0.000241         True Fisher Exact    0.022010          FN
+       sensitive_topics      195        0 0.008377         True Fisher Exact         inf          FP
+       medical_keywords      279       13 0.015374         True   Chi-square    0.362809          FN
+         polite_phrases      233        2 0.092318        False Fisher Exact    3.430675           Z
+negation_or_reassurance        5        1 0.137039        False Fisher Exact    0.119847           Z
+       numbers_and_labs      444        8 0.326036        False   Chi-square    1.653974           Z
+        narrative_style      428       11 1.000000        False   Chi-square    0.941349           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_distressed_stable_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         504  25
+rare_procedures_present           14   2
+numbers_and_labs_present         409  18
+negation_or_reassurance_present  162   7
+sensitive_topics_present         105   4
+polite_phrases_present           173   1
+narrative_style_present          227   2
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+        narrative_style      227        2 0.003569         True Fisher Exact    5.878486          FP
+         polite_phrases      173        1 0.009072         True Fisher Exact    8.574969          FP
+        rare_procedures       14        2 0.132433        False Fisher Exact    0.282609           Z
+       medical_keywords      504       25 0.298761        False   Chi-square    0.677647           Z
+       numbers_and_labs      409       18 0.909154        False   Chi-square    0.915256           Z
+negation_or_reassurance      162        7 1.000000        False   Chi-square    0.961928           Z
+       sensitive_topics      105        4 1.000000        False Fisher Exact    1.110000           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_distressed_stable_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         266  14
+rare_procedures_present            3   1
+numbers_and_labs_present         394  18
+negation_or_reassurance_present    4   0
+sensitive_topics_present         184   2
+polite_phrases_present           226   3
+narrative_style_present          417  11
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+         polite_phrases      226        3 0.019930         True Fisher Exact    3.796640          FP
+       sensitive_topics      184        2 0.021652         True Fisher Exact    4.507538          FP
+        narrative_style      417       11 0.066170        False   Chi-square    2.020023           Z
+        rare_procedures        3        1 0.151417        False Fisher Exact    0.122825           Z
+       medical_keywords      266       14 0.420165        False   Chi-square    0.718487           Z
+       numbers_and_labs      394       18 0.756226        False   Chi-square    0.859120           Z
+negation_or_reassurance        4        0 1.000000        False Fisher Exact         inf           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_distressed_stable_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         520  22
+rare_procedures_present           15   1
+numbers_and_labs_present         436  11
+negation_or_reassurance_present  183   6
+sensitive_topics_present         109   5
+polite_phrases_present           177   3
+narrative_style_present          234  12
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       numbers_and_labs      436       11 0.048231         True   Chi-square    2.107594          FP
+         polite_phrases      177        3 0.094019        False Fisher Exact    2.732779           Z
+        rare_procedures       15        1 0.478450        False Fisher Exact    0.612550           Z
+        narrative_style      234       12 0.510928        False   Chi-square    0.745223           Z
+negation_or_reassurance      183        6 0.686257        False   Chi-square    1.313397           Z
+       medical_keywords      520       22 0.988749        False   Chi-square    0.947349           Z
+       sensitive_topics      109        5 1.000000        False   Chi-square    0.886374           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_distressed_stable_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         276  14
+rare_procedures_present            4   1
+numbers_and_labs_present         422  11
+negation_or_reassurance_present    5   1
+sensitive_topics_present         189   3
+polite_phrases_present           228   3
+narrative_style_present          423  13
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+         polite_phrases      228        3 0.020250         True Fisher Exact    3.747155          FP
+       sensitive_topics      189        3 0.065256        False Fisher Exact    2.960241           Z
+       numbers_and_labs      422       11 0.070768        False   Chi-square    1.992082           Z
+        rare_procedures        4        1 0.183183        False Fisher Exact    0.161576           Z
+negation_or_reassurance        5        1 0.215670        False Fisher Exact    0.202170           Z
+        narrative_style      423       13 0.228969        False   Chi-square    1.583247           Z
+       medical_keywords      276       14 0.475385        False   Chi-square    0.742934           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_trigger_non-trigger_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         488  39
+rare_procedures_present           15   1
+numbers_and_labs_present         409  35
+negation_or_reassurance_present  168   6
+sensitive_topics_present          99   4
+polite_phrases_present           162  12
+narrative_style_present          215  25
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance      168        6 0.018802         True   Chi-square    2.817610          FP
+       sensitive_topics       99        4 0.127176        False Fisher Exact    2.348958           Z
+        narrative_style      215       25 0.196175        False   Chi-square    0.701337           Z
+       medical_keywords      488       39 0.404305        False   Chi-square    1.238111           Z
+         polite_phrases      162       12 0.593317        False   Chi-square    1.247191           Z
+       numbers_and_labs      409       35 0.837497        False   Chi-square    1.075761           Z
+        rare_procedures       15        1 1.000000        False Fisher Exact    1.344937           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_trigger_non-trigger_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         265  27
+rare_procedures_present            3   1
+numbers_and_labs_present         396  35
+negation_or_reassurance_present    5   0
+sensitive_topics_present         175   9
+polite_phrases_present           210  13
+narrative_style_present          387  42
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       sensitive_topics      175        9 0.098391        False   Chi-square    1.900028           Z
+        narrative_style      387       42 0.147368        False   Chi-square    0.703869           Z
+         polite_phrases      210       13 0.188349        False   Chi-square    1.566044           Z
+        rare_procedures        3        1 0.290127        False Fisher Exact    0.265625           Z
+       medical_keywords      265       27 0.520165        False   Chi-square    0.829619           Z
+       numbers_and_labs      396       35 1.000000        False   Chi-square    1.017687           Z
+negation_or_reassurance        5        0 1.000000        False Fisher Exact         inf           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_trigger_non-trigger_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         508  36
+rare_procedures_present           15   1
+numbers_and_labs_present         443  32
+negation_or_reassurance_present  182   3
+sensitive_topics_present         103   2
+polite_phrases_present           162  13
+narrative_style_present          228  20
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+negation_or_reassurance      182        3 0.001540         True Fisher Exact    4.882927          FP
+       sensitive_topics      103        2 0.056040        False Fisher Exact    3.838154           Z
+        narrative_style      228       20 0.298666        False   Chi-square    0.721705           Z
+         polite_phrases      162       13 0.679946        False   Chi-square    0.830769           Z
+       numbers_and_labs      443       32 0.822047        False   Chi-square    0.916313           Z
+       medical_keywords      508       36 0.910330        False   Chi-square    0.942645           Z
+        rare_procedures       15        1 1.000000        False Fisher Exact    1.033435           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_trigger_non-trigger_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         267  34
+rare_procedures_present            3   1
+numbers_and_labs_present         429  32
+negation_or_reassurance_present    5   1
+sensitive_topics_present         185   7
+polite_phrases_present           213  15
+narrative_style_present          400  39
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords      267       34 0.000094         True   Chi-square    0.373950          FN
+        narrative_style      400       39 0.009721         True   Chi-square    0.511117          FN
+       sensitive_topics      185        7 0.114082        False   Chi-square    2.005595           Z
+        rare_procedures        3        1 0.234148        False Fisher Exact    0.204204           Z
+negation_or_reassurance        5        1 0.330040        False Fisher Exact    0.341023           Z
+       numbers_and_labs      429       32 0.650986        False   Chi-square    0.865674           Z
+         polite_phrases      213       15 1.000000        False   Chi-square    0.971863           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_urgent_non-urgent_Arabic | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         480  57
+rare_procedures_present           12   0
+numbers_and_labs_present         415  33
+negation_or_reassurance_present  161  13
+sensitive_topics_present          95   5
+polite_phrases_present           168  15
+narrative_style_present          195  34
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       numbers_and_labs      415       33 0.000798         True   Chi-square    2.075845          FP
+       sensitive_topics       95        5 0.054822        False   Chi-square    2.575505           Z
+        narrative_style      195       34 0.070194        False   Chi-square    0.657895           Z
+negation_or_reassurance      161       13 0.108132        False   Chi-square    1.693896           Z
+         polite_phrases      168       15 0.186311        False   Chi-square    1.516667           Z
+        rare_procedures       12        0 0.380480        False Fisher Exact         inf           Z
+       medical_keywords      480       57 0.549864        False   Chi-square    1.144968           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_urgent_non-urgent_Arabic | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP  FN
+medical_keywords_present         245  51
+rare_procedures_present            3   0
+numbers_and_labs_present         402  33
+negation_or_reassurance_present    3   1
+sensitive_topics_present         166   7
+polite_phrases_present           216  15
+narrative_style_present          377  60
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords      245       51 0.000210         True   Chi-square    0.472745          FN
+       sensitive_topics      166        7 0.001589         True   Chi-square    3.449351          FP
+       numbers_and_labs      402       33 0.002087         True   Chi-square    1.961866          FP
+         polite_phrases      216       15 0.012983         True   Chi-square    2.080000          FP
+        narrative_style      377       60 0.043710         True   Chi-square    0.663178          FN
+negation_or_reassurance        3        1 0.380874        False Fisher Exact    0.379421           Z
+        rare_procedures        3        0 1.000000        False Fisher Exact         inf           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_urgent_non-urgent_English | on col LANGUAGE: ar
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         440  111
+rare_procedures_present           15    2
+numbers_and_labs_present         369   66
+negation_or_reassurance_present  139   22
+sensitive_topics_present          88   12
+polite_phrases_present           123   32
+narrative_style_present          173   47
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with  p_value  Significant         Test  Odds_Ratio Enriched_in
+       numbers_and_labs      369       66 0.008337         True   Chi-square    1.566879          FP
+negation_or_reassurance      139       22 0.073154        False   Chi-square    1.586305           Z
+       sensitive_topics       88       12 0.078329        False   Chi-square    1.813830           Z
+        narrative_style      173       47 0.380725        False   Chi-square    0.833296           Z
+       medical_keywords      440      111 0.393003        False   Chi-square    0.862162           Z
+         polite_phrases      123       32 0.668232        False   Chi-square    0.889906           Z
+        rare_procedures       15        2 0.754329        False Fisher Exact    1.781818           Z
+================================================================================
+
+================================================================================
+MODEL / CSV: ZeroShot_urgent_non-urgent_English | on col LANGUAGE: en
+--------------------------------------------------------------------------------
+FP / FN Counts:
+                                  FP   FN
+medical_keywords_present         222   91
+rare_procedures_present            4    2
+numbers_and_labs_present         358   66
+negation_or_reassurance_present    4    2
+sensitive_topics_present         159   13
+polite_phrases_present           174   33
+narrative_style_present          314  112
+--------------------------------------------------------------------------------
+Significance Table:
+                Keyword  FP_with  FN_with      p_value  Significant         Test  Odds_Ratio Enriched_in
+       medical_keywords      222       91 1.151534e-07         True   Chi-square    0.422383          FN
+        narrative_style      314      112 1.194787e-06         True   Chi-square    0.458379          FN
+       sensitive_topics      159       13 4.084194e-05         True   Chi-square    3.322603          FP
+       numbers_and_labs      358       66 2.084058e-02         True   Chi-square    1.485477          FP
+         polite_phrases      174       33 2.366393e-01        False   Chi-square    1.306306           Z
+        rare_procedures        4        2 3.218655e-01        False Fisher Exact    0.468900           Z
+negation_or_reassurance        4        2 3.218655e-01        False Fisher Exact    0.468900           Z
+================================================================================
+
+SUMMARY OF SIGNIFICANT FEATURES PER MODEL / LANGUAGE:
+  Claude-Haiku-4.5_Arabic_ar Claude-Haiku-4.5_Arabic_en Claude-Haiku-4.5_English_ar Claude-Haiku-4.5_English_en    GPT-4o-mini_Arabic_ar GPT-4o-mini_Arabic_en   GPT-4o-mini_English_ar GPT-4o-mini_English_en   XLM-R-Arabic_Arabic_ar XLM-R-Arabic_Arabic_en XLM-R-Arabic_English_ar XLM-R-Arabic_English_en  XLM-R-English_Arabic_ar XLM-R-English_Arabic_en XLM-R-English_English_ar XLM-R-English_English_en XLM-R-Multilingual_Arabic_ar XLM-R-Multilingual_Arabic_en XLM-R-Multilingual_English_ar XLM-R-Multilingual_English_en ZeroShot_base_concerning_normal_Arabic_ar ZeroShot_base_concerning_normal_Arabic_en ZeroShot_base_concerning_normal_English_ar ZeroShot_base_concerning_normal_English_en ZeroShot_base_distressed_stable_Arabic_ar ZeroShot_base_distressed_stable_Arabic_en ZeroShot_base_distressed_stable_English_ar ZeroShot_base_distressed_stable_English_en ZeroShot_base_trigger_non-trigger_Arabic_ar ZeroShot_base_trigger_non-trigger_Arabic_en ZeroShot_base_trigger_non-trigger_English_ar ZeroShot_base_trigger_non-trigger_English_en ZeroShot_base_urgent_non-urgent_Arabic_ar ZeroShot_base_urgent_non-urgent_Arabic_en ZeroShot_base_urgent_non-urgent_English_ar ZeroShot_base_urgent_non-urgent_English_en ZeroShot_concerning_normal_Arabic_ar ZeroShot_concerning_normal_Arabic_en ZeroShot_concerning_normal_English_ar ZeroShot_concerning_normal_English_en ZeroShot_distressed_stable_Arabic_ar ZeroShot_distressed_stable_Arabic_en ZeroShot_distressed_stable_English_ar ZeroShot_distressed_stable_English_en ZeroShot_trigger_non-trigger_Arabic_ar ZeroShot_trigger_non-trigger_Arabic_en ZeroShot_trigger_non-trigger_English_ar ZeroShot_trigger_non-trigger_English_en ZeroShot_urgent_non-urgent_Arabic_ar ZeroShot_urgent_non-urgent_Arabic_en ZeroShot_urgent_non-urgent_English_ar ZeroShot_urgent_non-urgent_English_en
+0    negation_or_reassurance           numbers_and_labs     negation_or_reassurance            numbers_and_labs  negation_or_reassurance       narrative_style  negation_or_reassurance        narrative_style  negation_or_reassurance        rare_procedures        sensitive_topics         rare_procedures         numbers_and_labs        numbers_and_labs         sensitive_topics          rare_procedures      negation_or_reassurance             sensitive_topics       negation_or_reassurance                           NaN                   negation_or_reassurance                          sensitive_topics                    negation_or_reassurance                           medical_keywords                   negation_or_reassurance                          sensitive_topics                                        NaN                                        NaN                     negation_or_reassurance                              polite_phrases                             medical_keywords                             medical_keywords                   negation_or_reassurance                          medical_keywords                    negation_or_reassurance                             polite_phrases                       polite_phrases                     sensitive_topics                                   NaN                       rare_procedures                      narrative_style                       polite_phrases                      numbers_and_labs                        polite_phrases                negation_or_reassurance                                    NaN                 negation_or_reassurance                        medical_keywords                     numbers_and_labs                     medical_keywords                      numbers_and_labs                      medical_keywords
+1           numbers_and_labs            narrative_style            numbers_and_labs             narrative_style         numbers_and_labs      numbers_and_labs         numbers_and_labs       numbers_and_labs                      NaN                    NaN         rare_procedures         narrative_style         sensitive_topics        sensitive_topics  negation_or_reassurance                      NaN             sensitive_topics             medical_keywords                           NaN                           NaN                                       NaN                                       NaN                             polite_phrases                             polite_phrases                                       NaN                                       NaN                                        NaN                                        NaN                              polite_phrases                            sensitive_topics                              narrative_style                                          NaN                          sensitive_topics                          sensitive_topics                             polite_phrases                            narrative_style              negation_or_reassurance                       polite_phrases                                   NaN                      sensitive_topics                       polite_phrases                     sensitive_topics                                   NaN                                   NaN                                    NaN                                    NaN                                     NaN                         narrative_style                                  NaN                     sensitive_topics                                   NaN                       narrative_style
+2            narrative_style                        NaN                         NaN                         NaN          narrative_style                   NaN          narrative_style                    NaN                      NaN                    NaN                     NaN        medical_keywords  negation_or_reassurance         rare_procedures                      NaN                      NaN                          NaN                          NaN                           NaN                           NaN                                       NaN                                       NaN                           sensitive_topics                           sensitive_topics                                       NaN                                       NaN                                        NaN                                        NaN                            numbers_and_labs                            medical_keywords                                          NaN                                          NaN                                       NaN                                       NaN                                        NaN                                        NaN                      rare_procedures                     medical_keywords                                   NaN                      medical_keywords                                  NaN                                  NaN                                   NaN                                   NaN                                    NaN                                    NaN                                     NaN                                     NaN                                  NaN                     numbers_and_labs                                   NaN                      sensitive_topics
+3                        NaN                        NaN                         NaN                         NaN                      NaN                   NaN                      NaN                    NaN                      NaN                    NaN                     NaN                     NaN          rare_procedures                     NaN                      NaN                      NaN                          NaN                          NaN                           NaN                           NaN                                       NaN                                       NaN                           medical_keywords                                        NaN                                       NaN                                       NaN                                        NaN                                        NaN                                         NaN                             narrative_style                                          NaN                                          NaN                                       NaN                                       NaN                                        NaN                                        NaN                                  NaN                      rare_procedures                                   NaN                                   NaN                                  NaN                                  NaN                                   NaN                                   NaN                                    NaN                                    NaN                                     NaN                                     NaN                                  NaN                       polite_phrases                                   NaN                      numbers_and_labs
+4                        NaN                        NaN                         NaN                         NaN                      NaN                   NaN                      NaN                    NaN                      NaN                    NaN                     NaN                     NaN                      NaN                     NaN                      NaN                      NaN                          NaN                          NaN                           NaN                           NaN                                       NaN                                       NaN                                        NaN                                        NaN                                       NaN                                       NaN                                        NaN                                        NaN                                         NaN                            numbers_and_labs                                          NaN                                          NaN                                       NaN                                       NaN                                        NaN                                        NaN                                  NaN                                  NaN                                   NaN                                   NaN                                  NaN                                  NaN                                   NaN                                   NaN                                    NaN                                    NaN                                     NaN                                     NaN                                  NaN                      narrative_style                                   NaN                                   NaN

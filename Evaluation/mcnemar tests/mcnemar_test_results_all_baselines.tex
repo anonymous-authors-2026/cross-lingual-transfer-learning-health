@@ -1,0 +1,22 @@
+\begin{table}
+\caption{McNemar's Test: Fine-tuned XLM-RoBERTa vs All Baselines (α=0.05)}
+\label{tab:mcnemar_all_baselines}
+\begin{tabular}{lllrrrll}
+\toprule
+Fine-tuned Model & Baseline & Language & FT Accuracy & Baseline Accuracy & Improvement & P-value & Significant (α=0.05) \\
+\midrule
+XLM-R-Multilingual & XLM-R-Base (Zero-Shot) & Arabic & 0.843263 & 0.521998 & 0.321265 & $<0.01$ & Yes \\
+XLM-R-Multilingual & XLM-R-NLI (Zero-Shot) & Arabic & 0.843263 & 0.519248 & 0.324015 & $<0.01$ & Yes \\
+XLM-R-Arabic & XLM-R-Base (Zero-Shot) & Arabic & 0.709899 & 0.521998 & 0.187901 & $<0.01$ & Yes \\
+XLM-R-Arabic & XLM-R-NLI (Zero-Shot) & Arabic & 0.709899 & 0.519248 & 0.190651 & $<0.01$ & Yes \\
+XLM-R-English & XLM-R-Base (Zero-Shot) & Arabic & 0.654445 & 0.521998 & 0.132447 & $<0.01$ & Yes \\
+XLM-R-English & XLM-R-NLI (Zero-Shot) & Arabic & 0.654445 & 0.519248 & 0.135197 & $<0.01$ & Yes \\
+XLM-R-Multilingual & XLM-R-Base (Zero-Shot) & English & 0.846013 & 0.497709 & 0.348304 & $<0.01$ & Yes \\
+XLM-R-Multilingual & XLM-R-NLI (Zero-Shot) & English & 0.846013 & 0.509166 & 0.336847 & $<0.01$ & Yes \\
+XLM-R-Arabic & XLM-R-Base (Zero-Shot) & English & 0.675527 & 0.497709 & 0.177819 & $<0.01$ & Yes \\
+XLM-R-Arabic & XLM-R-NLI (Zero-Shot) & English & 0.675527 & 0.509166 & 0.166361 & $<0.01$ & Yes \\
+XLM-R-English & XLM-R-Base (Zero-Shot) & English & 0.717690 & 0.497709 & 0.219982 & $<0.01$ & Yes \\
+XLM-R-English & XLM-R-NLI (Zero-Shot) & English & 0.717690 & 0.509166 & 0.208524 & $<0.01$ & Yes \\
+\bottomrule
+\end{tabular}
+\end{table}

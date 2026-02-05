@@ -1,0 +1,37 @@
+{
+  "model_name": "llama-3b-instruct-arabic",
+  "timestamp": "20251125_051031",
+  "dataset_info": {
+    "total_samples": 2182,
+    "class_0_samples": 1091,
+    "class_1_samples": 1091
+  },
+  "metrics": {
+    "accuracy": 0.7392300641613199,
+    "precision": 0.7223168654173765,
+    "recall": 0.7772685609532539,
+    "f1_score": 0.7487858719646799
+  },
+  "confusion_matrix": {
+    "true_negative": 765,
+    "false_positive": 326,
+    "false_negative": 243,
+    "true_positive": 848
+  },
+  "per_class_metrics": {
+    "class_0": {
+      "precision": 0.7589285714285714,
+      "recall": 0.7011915673693859,
+      "f1_score": 0.728918532634588
+    },
+    "class_1": {
+      "precision": 0.7223168654173765,
+      "recall": 0.7772685609532539,
+      "f1_score": 0.7487858719646799
+    }
+  },
+  "confidence_analysis": {
+    "avg_confidence_correct": 0.7674784264576339,
+    "avg_confidence_incorrect": 0.6952858513813656
+  }
+}

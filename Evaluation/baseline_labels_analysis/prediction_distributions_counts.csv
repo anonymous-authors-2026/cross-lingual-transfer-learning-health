@@ -1,0 +1,21 @@
+Model,Label_Formulation,Language,Total_Samples,Pred_Class_0_Count,Pred_Class_1_Count
+BASE,"['concerning', 'normal']",Arabic,2182,82,2100
+BASE,"['concerning', 'normal']",English,2182,755,1427
+BASE,"['urgent', 'non-urgent']",Arabic,2182,1640,542
+BASE,"['urgent', 'non-urgent']",English,2182,2032,150
+BASE,"['trigger', 'non-trigger']",Arabic,2182,782,1400
+BASE,"['trigger', 'non-trigger']",English,2182,2161,21
+BASE,"['distressed', 'stable']",Arabic,2182,71,2111
+BASE,"['distressed', 'stable']",English,2182,9,2173
+BASE,"['needs support', 'doing well']",Arabic,2182,2146,36
+BASE,"['needs support', 'doing well']",English,2182,2162,20
+NLI,"['concerning', 'normal']",Arabic,2182,99,2083
+NLI,"['concerning', 'normal']",English,2182,69,2113
+NLI,"['urgent', 'non-urgent']",Arabic,2182,274,1908
+NLI,"['urgent', 'non-urgent']",English,2182,449,1733
+NLI,"['trigger', 'non-trigger']",Arabic,2182,214,1968
+NLI,"['trigger', 'non-trigger']",English,2182,158,2024
+NLI,"['distressed', 'stable']",Arabic,2182,152,2030
+NLI,"['distressed', 'stable']",English,2182,114,2068
+NLI,"['needs support', 'doing well']",Arabic,2182,257,1925
+NLI,"['needs support', 'doing well']",English,2182,131,2051

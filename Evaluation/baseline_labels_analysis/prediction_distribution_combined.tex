@@ -1,0 +1,27 @@
+\begin{table}
+\caption{Prediction Distribution Comparison - Base vs NLI Models (Counts and Percentages)}
+\label{tab:pred_dist_comparison}
+\begin{tabular}{llrrrrrrrrrr}
+\toprule
+ &  & \multicolumn{2}{r}{Pred_Class_0_Count} & \multicolumn{2}{r}{Pred_Class_1_Count} & \multicolumn{2}{r}{Pred_Class_0_Pct} & \multicolumn{2}{r}{Pred_Class_1_Pct} & \multicolumn{2}{r}{Prediction_Bias} \\
+ & Language & Arabic & English & Arabic & English & Arabic & English & Arabic & English & Arabic & English \\
+Label_Formulation & Model &  &  &  &  &  &  &  &  &  &  \\
+\midrule
+\multirow[t]{2}{*}{['concerning', 'normal']} & BASE & 82.0 & 755.0 & 2100.0 & 1427.0 & 3.8 & 34.6 & 96.2 & 65.4 & 46.2 & 15.4 \\
+ & NLI & 99.0 & 69.0 & 2083.0 & 2113.0 & 4.5 & 3.2 & 95.5 & 96.8 & 45.5 & 46.8 \\
+\cline{1-12}
+\multirow[t]{2}{*}{['distressed', 'stable']} & BASE & 71.0 & 9.0 & 2111.0 & 2173.0 & 3.3 & 0.4 & 96.7 & 99.6 & 46.7 & 49.6 \\
+ & NLI & 152.0 & 114.0 & 2030.0 & 2068.0 & 7.0 & 5.2 & 93.0 & 94.8 & 43.0 & 44.8 \\
+\cline{1-12}
+\multirow[t]{2}{*}{['needs support', 'doing well']} & BASE & 2146.0 & 2162.0 & 36.0 & 20.0 & 98.4 & 99.1 & 1.6 & 0.9 & -48.4 & -49.1 \\
+ & NLI & 257.0 & 131.0 & 1925.0 & 2051.0 & 11.8 & 6.0 & 88.2 & 94.0 & 38.2 & 44.0 \\
+\cline{1-12}
+\multirow[t]{2}{*}{['trigger', 'non-trigger']} & BASE & 782.0 & 2161.0 & 1400.0 & 21.0 & 35.8 & 99.0 & 64.2 & 1.0 & 14.2 & -49.0 \\
+ & NLI & 214.0 & 158.0 & 1968.0 & 2024.0 & 9.8 & 7.2 & 90.2 & 92.8 & 40.2 & 42.8 \\
+\cline{1-12}
+\multirow[t]{2}{*}{['urgent', 'non-urgent']} & BASE & 1640.0 & 2032.0 & 542.0 & 150.0 & 75.2 & 93.1 & 24.8 & 6.9 & -25.2 & -43.1 \\
+ & NLI & 274.0 & 449.0 & 1908.0 & 1733.0 & 12.6 & 20.6 & 87.4 & 79.4 & 37.4 & 29.4 \\
+\cline{1-12}
+\bottomrule
+\end{tabular}
+\end{table}

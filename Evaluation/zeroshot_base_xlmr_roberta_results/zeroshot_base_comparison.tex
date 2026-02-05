@@ -1,0 +1,17 @@
+\begin{table}
+\caption{Zero-Shot Performance Across Different Label Formulations}
+\label{tab:zeroshot_base_comparison}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{2}{r}{Accuracy} & \multicolumn{2}{r}{Precision} & \multicolumn{2}{r}{Recall} & \multicolumn{2}{r}{F1} \\
+Language & Arabic & English & Arabic & English & Arabic & English & Arabic & English \\
+Label_Formulation &  &  &  &  &  &  &  &  \\
+\midrule
+['concerning', 'normal'] & 0.4991 & 0.5078 & 0.4995 & 0.5060 & 0.9615 & 0.6618 & 0.6575 & 0.5735 \\
+['distressed', 'stable'] & 0.4968 & 0.5023 & 0.4983 & 0.5012 & 0.9643 & 0.9982 & 0.6571 & 0.6673 \\
+['needs support', 'doing well'] & 0.5009 & 0.5009 & 0.5278 & 0.5500 & 0.0174 & 0.0101 & 0.0337 & 0.0198 \\
+['trigger', 'non-trigger'] & 0.5220 & 0.4977 & 0.5171 & 0.3810 & 0.6636 & 0.0073 & 0.5813 & 0.0144 \\
+['urgent', 'non-urgent'] & 0.5082 & 0.5220 & 0.5166 & 0.6600 & 0.2566 & 0.0907 & 0.3429 & 0.1595 \\
+\bottomrule
+\end{tabular}
+\end{table}
